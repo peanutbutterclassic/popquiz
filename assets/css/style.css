@@ -73,6 +73,52 @@ h4 {
 
 }
 
+/* ------------------------------------------Special padding/margins/texts */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+} 
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+}
+
 /* ------------------------------------------Heading */
 
 
@@ -221,3 +267,13 @@ footer {
     padding: 20px;
 }
 
+/* ------------------------------------------Three reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e62;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}

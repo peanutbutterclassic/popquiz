@@ -1,25 +1,8 @@
-// const startButton = document.getElementById("start-btn")
-
-// startButton.addEventListener("click", startQuiz)
-
-// function startQuiz() {
-//     console.log("started")
-// }
-
-// function getNewQuestion() {
-
-// }
-
-// function selectAnswer() {
-
-// }
-
-// game
-const question = document.querySelector("#question");
-const choices = Array.from(document.querySelectorAll(".choice-text"));
-const progressText = document.querySelector("#progressText");
-const scoreText = document.querySelector("#score");
-const progressBarFull = document.querySelector("#progressBarFull");
+const question = document.getElementById("question");
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const progressText = document.getElementById("progressText");
+const scoreText = document.getElementById("score");
+const progressBarFull = document.getElementById("progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -372,7 +355,7 @@ incrementScore = (num) => {
 
 const setupAudio = () => {
     // Load audios
-    const click = new Audio("assets/sound/rucksack.mp3");
+    const click = new Audio("assets/sound/zapsplat_sound_shockwave_whoosh.mp3");
 
     // Audio buttons
     const clickButton = document.querySelectorAll(".click");
@@ -397,9 +380,9 @@ const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// };
+btn.onclick = function() {
+  modal.style.display = "block";
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

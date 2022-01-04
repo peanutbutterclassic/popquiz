@@ -448,7 +448,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-saveHighScore = e => {
+const saveHighScore = e => {
     e.preventDefault();
 
     const score = {
@@ -466,4 +466,9 @@ saveHighScore = e => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/');
+};
+
+const togglePanel = (panelId, show) => {
+    let panel = document.getElementById(panelId);
+    panel.classList.toggle('d-none', !show);
 };

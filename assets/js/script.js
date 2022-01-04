@@ -355,7 +355,7 @@ incrementScore = (num) => {
 
 const setupAudio = () => {
     // Load audios
-    const click = new Audio("assets/sound/zapsplat_sound_shockwave_whoosh.mp3");
+    const click = new Audio("../sound/whoosh.mp3");
 
     // Audio buttons
     const clickButton = document.querySelectorAll(".click");

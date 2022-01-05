@@ -44,68 +44,72 @@
                         <!-- Full screen modal -->
                         <div id="myModal" class="modal modal-fullscreen click" tabindex="-1">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title">POP QUIZ</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="container-fluid">
-                                    <div id="game" class="flex-center flex-column">
-                                        <div id="hud">
-                                            <div class="hud-item">
-                                                <p id="progressText" class="hud-prefix">
-                                                    Question
-                                                </p>
-                                                <div id="progressBar">
-                                                    <div id="progressBarFull" aria-label="Progress bar"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="hud-item">
-                                                    <p class="hud-prefix" aria-label="Score">
-                                                        Score
-                                                    </p>
-                                                    <h1 class="hud-main-text" id="score">
-                                                        0
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h2 id="question">What is the answer to this question</h2>
-                                        <div class="choice-container">
-                                            <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 1">A</button>
-                                            <button type="button" class="click choice-text btn btn-light" data-number="1" aria-label="Choice number 1">Choice 1</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 2">B</button>
-                                            <button type="button" class="click choice-text btn btn-light" data-number="2" aria-label="Choice number 2">Choice 2</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 3">C</button>
-                                            <button type="button" class="click choice-text btn btn-light" data-number="3" aria-label="Choice number 3">Choice 3</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 4">D</button>
-                                            <button type="button" class="click choice-text btn btn-light" data-number="4" aria-label="Choice number 4">Choice 4</button>
-                                        </div>
+                                <div class="modal-content">
+                                    <div class="modal-header bg-modal-pop-quiz">
+                                        <h5 class="modal-title general-sub">POP QUIZ</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <!-- End Game -->
-                                    <section id="panelId" class="container-fluid">
-                                    <div class="row">
-                                    <div id="highScores" class="col-md-12 section-column">
-                                    <!--- temporal added elements -->
-                                    <div id="finalScore">final score</div>
-                                    <div id="username">username</div>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">QUIT</button>
-                                <button type="button" class="btn btn-primary">Save SCORE</button>
-                            </div>
-                            <!-- end of pop quiz -->
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div id="game" class="flex-center flex-column">
+                                                <div id="hud">
+                                                    <div class="hud-item">
+                                                        <p id="progressText" class="hud-prefix">
+                                                            Question
+                                                        </p>
+                                                        <div id="progressBar">
+                                                            <div id="progressBarFull" aria-label="Progress bar"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="hud-item">
+                                                            <p class="hud-prefix" aria-label="Score">
+                                                                Score
+                                                            </p>
+                                                            <h1 class="hud-main-text" id="score">
+                                                                0
+                                                            </h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h2 id="question">What is the answer to this question</h2>
+                                                <div class="choice-container">
+                                                    <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 1">A</button>
+                                                    <button type="button" class="click choice-text btn btn-light" data-number="1" aria-label="Choice number 1">Choice 1</button>
+                                                </div>
+                                                <div class="choice-container">
+                                                    <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 2">B</button>
+                                                    <button type="button" class="click choice-text btn btn-light" data-number="2" aria-label="Choice number 2">Choice 2</button>
+                                                </div>
+                                                <div class="choice-container">
+                                                    <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 3">C</button>
+                                                    <button type="button" class="click choice-text btn btn-light" data-number="3" aria-label="Choice number 3">Choice 3</button>
+                                                </div>
+                                                <div class="choice-container">
+                                                    <button type="button" class="click choice-prefix btn btn-dark" aria-label="Choice number 4">D</button>
+                                                    <button type="button" class="click choice-text btn btn-light" data-number="4" aria-label="Choice number 4">Choice 4</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- End Game -->
+                                            <section id="panelId" class="container-fluid">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div id="highScores" class="col-md-12 section-column">
+                                                        <!--- temporal added elements -->
+                                                        <div id="finalScore">final score</div>
+                                                        <div id="username">username</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">QUIT</button>
+                                            <button type="button" class="btn btn-primary">Save SCORE</button>
+                                        </div>
+                                
+                                <!-- end of pop quiz -->
                             <div class="container">
                                 <div id="highScores" class="flex-center flex-column">
                                     <h1 id="finalScore" class="text-center">0</h1>
@@ -118,6 +122,8 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                         </div>
                         
                         
@@ -147,49 +153,7 @@
     </header>
     <section id="leaderboard-panel" class="container-fluid">
         <div class="row">
-            <!-- <div class="col-md-4 bg-color-personal-info section-column">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="section-header uppercase">Top 5</h3>
-                    </div>
-                </div>
-                <div class="person-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            First (Leader):
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            Rano Fisher
-                        </p>
-                    </div>
-                </div>
-                <div class="person-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Second (runners up):
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            David McKenzie
-                        </p>
-                    </div>
-                </div>
-                <div class="person-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Third Place:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            Gilian McDonald
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+            
 
             <!-- Leaderboard -->
 

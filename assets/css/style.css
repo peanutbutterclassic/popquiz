@@ -286,3 +286,9 @@ footer {
 .three-reasons-heading {
     margin-bottom: 15px;
 }
+
+/* ------------------------------------------Quiz button */
+
+.quiz-button {
+    margin: 25px;
+}

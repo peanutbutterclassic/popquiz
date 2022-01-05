@@ -32,11 +32,12 @@
             <div class="col-md-8">
                 <div class="row g-0 bg-color-name-title">
                     <div class="col heading">
-                        <h1 class="name">Try our pop quiz!</h1>
+                        <h1 class="name justify-content-center">Try our pop quiz!</h1>
                         
                         <!-- start button -->
-                        <div>
-                            <button id="myBtn" class="click quiz-box-button">LET'S PLAY <br><i class="fas fa-play"></i></button>
+                        <div class="justify-content-center">
+                            <button type="button" id="myBtn" class="click shadow-lg rounded btn btn-warning btn-lg quiz-button"><i class="fas fa-play"></i>  START QUIZ</button>
+                            <!-- <button id="myBtn" class="click quiz-box-button"><i class="fas fa-play"></i>LET'S PLAY <br></button> -->
                         </div>
                         <div>
                     
@@ -91,30 +92,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">QUIT</button>
-                                  <button type="button" class="btn btn-primary">Save SCORE</button>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <!-- End Game -->
-                        <section id="game-panel" class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 section-column">
+                                    <!-- End Game -->
+                                    <section id="panelId" class="container-fluid">
+                                    <div class="row">
+                                    <div id="highScores" class="col-md-12 section-column">
                                     <!--- temporal added elements -->
                                     <div id="finalScore">final score</div>
                                     <div id="username">username</div>
                                 </div>
                             </div>
-                        </section>
+                            <div>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">QUIT</button>
+                                <button type="button" class="btn btn-primary">Save SCORE</button>
+                            </div>
+                        </div>
                         <!-- new modal open for end of pop quiz -->
-                        <div class="container">
-                            <div id="end" class="flex-center flex-column">
+                        <div class="container d-none">
+                            <div id="highScores" class="flex-center flex-column">
                                 <h1 id="finalScore" class="text-center">0</h1>
                                 <form class="end-form-container">
-                                    <h2 id="end-text">Enter your name below to save your score</h2>
+                                    <p id="end-text">Enter your name below to save your score</p>
                                     <input type="text" class="click" name="name" id="username" placeholder="Enter your name">
                                     <button type="submit" class="click quiz-button" id="saveScoreButton" onclick="saveHighScore(event)" aria-label="Click to save score" disabled>Save</button>
                                 </form>
@@ -122,74 +120,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Start of modal -->
-                        <!-- <div id="myModal" class="modal"> 
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <div>
-                                    <div id="game" class="flex-center flex-column">
-                                        <div id="hud">
-                                            <div class="hud-item">
-                                                <p id="progressText" class="hud-prefix">
-                                                    Question
-                                                </p>
-                                                <div id="progressBar">
-                                                    <div id="progressBarFull" aria-label="Progress bar"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="hud-item">
-                                                    <p class="hud-prefix" aria-label="Score">
-                                                        Score
-                                                    </p>
-                                                    <h1 class="hud-main-text" id="score">
-                                                        0
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h2 id="question">What is the answer to this question</h2>
-                                        <div class="choice-container">
-                                            <button class="click choice-prefix" aria-label="Choice number 1">A</button>
-                                            <button class="click choice-text" data-number="1" aria-label="Choice number 1">Choice 1</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button class="click choice-prefix" aria-label="Choice number 2">B</button>
-                                            <button class="click choice-text" data-number="2" aria-label="Choice number 2">Choice 2</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button class="click choice-prefix" aria-label="Choice number 3">C</button>
-                                            <button class="click choice-text" data-number="3" aria-label="Choice number 3">Choice 3</button>
-                                        </div>
-                                        <div class="choice-container">
-                                            <button class="click choice-prefix" aria-label="Choice number 4">D</button>
-                                            <button class="click choice-text" data-number="4" aria-label="Choice number 4">Choice 4</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  -->
-                        <!-- quiz info -->
-                        <!-- <div>
-                            <div class="rule-box">
-                                <span class="rule-title">Rules</span>
-                            </div>
-                            <div class="quiz-rule">
-                                <div class="rule">1. You will have 15 seconds for each question.<span></span></div>
-                                <div class="rule">2. You cannot undo what you clicked.<span></span></div>
-                                <div class="rule">3. There are 10 questions in total.<span></span></div>
-                                <div class="rule">4. Once you leave the quiz, that's it!<span></span></div>
-                                <div class="rule">5. There is a maximum of 1000 points to be gained.<span></span></div>
-                            </div>
-                            <div class="buttons">
-                                <button class="quit">Exit</button>
-                                <button class="quit">continue</button>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
-                <div class="row g-0">
+                <div class="row g-0 d-none">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 m-0 col-sm-3 ui-menu-color-home list-inline-item menuitem">
@@ -209,8 +142,7 @@
                 </div>
             </div>
         </div>
-        </div>
-        
+        </div>  
     </header>
     <section id="leaderboard-panel" class="container-fluid">
         <div class="row">

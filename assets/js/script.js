@@ -291,7 +291,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter === MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         
-        return window.location.assign("end");
+        return window.location.assign("index.html");
     }
 
     questionCounter++;
@@ -314,8 +314,9 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+const newLocal = 'click';
 choices.forEach(choice => {
-    choice.addEventListener('click', e => {
+    choice.addEventListener(newLocal, e => {
         if (!acceptingAnswers) {
             return;
         }
@@ -421,7 +422,7 @@ const saveScoreBtn = document.querySelector('#saveScoreButton');
 const finalScore = document.querySelector('#finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
-// const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
@@ -447,11 +448,13 @@ const saveHighScore = e => {
 
     highScores.splice(5);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/');
+    // localStorage.setItem('highScores', JSON.stringify(highScores));
+    // window.location.assign('/');
+    localStorage.setItem('highScores', JSON.stringify([{name: "guido", score: 200}, {name: "rano", score: 150}]));
 };
 
 const togglePanel = (panelId, show) => {
     let panel = document.getElementById(panelId);
     panel.classList.toggle('d-none', !show);
 };
+

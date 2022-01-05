@@ -217,6 +217,12 @@ header {
     height: 120px;
 }
 
+/* ------------------------------------------Leaderboard */
+
+#leaderboard-details {
+    padding: 20px;
+}
+
 /* ------------------------------------------Footer */
 
 footer {

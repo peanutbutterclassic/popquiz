@@ -288,10 +288,10 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter === MAX_QUESTIONS) {
+    if (questionCounter === MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        
-        return window.location.assign("index.html");
+        gameOver();
+        return;
     }
 
     questionCounter++;
@@ -342,9 +342,9 @@ choices.forEach(choice => {
     });
 
     // Audio buttons
-    choice.addEventListener("click", () => {
-        click.play();
-    });
+    // choice.addEventListener("click", () => {
+    //     click.play();
+    // });
 });
 
 // incremement score
@@ -356,7 +356,7 @@ incrementScore = (num) => {
 
 const setupAudio = () => {
     // Load audios
-    const click = new Audio("../sounds/whoosh.mp3");
+    const click = new Audio("assets/sounds/whoosh.mp3");
 
     // Audio buttons
     const clickButton = document.querySelectorAll("click");
@@ -386,9 +386,9 @@ btn.onclick = function() {
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-};
+// span.onclick = function() {
+//   modal.style.display = "none";
+// };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -420,24 +420,19 @@ function updateScoreTable() {
 const username = document.querySelector('#username');
 const saveScoreBtn = document.querySelector('#saveScoreButton');
 const finalScore = document.querySelector('#finalScore');
-const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
-finalScore.innerText = mostRecentScore;
-
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-const saveHighScore = e => {
-    e.preventDefault();
-
+const saveHighScore = (playerName, mostRecentScore) => {
     const score = {
         score: mostRecentScore,
-        name: username.value
+        name: playerName
     };
 
     highScores.push(score);
@@ -448,9 +443,9 @@ const saveHighScore = e => {
 
     highScores.splice(5);
 
-    // localStorage.setItem('highScores', JSON.stringify(highScores));
+    localStorage.setItem('highScores', JSON.stringify(highScores));
     // window.location.assign('/');
-    localStorage.setItem('highScores', JSON.stringify([{name: "guido", score: 200}, {name: "rano", score: 150}]));
+    // localStorage.setItem('highScores', JSON.stringify([{name: "guido", score: 200}, {name: "rano", score: 150}]));
 };
 
 const togglePanel = (panelId, show) => {
@@ -458,3 +453,30 @@ const togglePanel = (panelId, show) => {
     panel.classList.toggle('d-none', !show);
 };
 
+const initialPanelsState = () => {
+    togglePanel('playerInfoPanel', false);
+    togglePanel('leaderboard-panel', false);
+};
+
+const gameOver = () => {
+    togglePanel('playerInfoPanel', true);
+    const playerInfoFormFinalScore = document.getElementById('playerInfoFormFinalScore');
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+    playerInfoFormFinalScore.innerText = mostRecentScore;
+};
+
+const playerInfoForm = document.getElementById('playerInfoForm');
+playerInfoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+    const playerName = e.target.elements["playername"].value;
+    saveHighScore(playerName, parseInt(mostRecentScore, 10));
+    updateScoreTable();
+
+    togglePanel('playerInfoPanel', false);
+    togglePanel('leaderboard-panel', true);
+});
+
+initialPanelsState();

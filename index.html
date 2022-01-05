@@ -38,14 +38,13 @@
                             <button id="myBtn" class="click quiz-box-button">LET'S PLAY <br><i class="fas fa-play"></i></button>
                         </div>
                         <div>
-                        
-                        <!-- Fullscreen modal -->
+                    
                         <!-- Full screen modal -->
-                        <div id="myModal" class="modal click" tabindex="-1">
+                        <div id="myModal" class="modal modal-fullscreen click" tabindex="-1">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title">Modal title</h5>
+                                  <h5 class="modal-title">POP QUIZ</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -93,12 +92,26 @@
                                 </div>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">QUIT</button>
+                                  <button type="button" class="btn btn-primary">Save SCORE</button>
                                 </div>
                               </div>
                             </div>
                           </div>
+
+                        <!-- new modal open for end of pop quiz -->
+                        <div class="container">
+                            <div id="end" class="flex-center flex-column">
+                                <h1 id="finalScore" class="text-center">0</h1>
+                                <form class="end-form-container">
+                                    <h2 id="end-text">Enter your name below to save your score</h2>
+                                    <input type="text" class="click" name="name" id="username" placeholder="Enter your name">
+                                    <button type="submit" class="click quiz-button" id="saveScoreButton" onclick="saveHighScore(event)" aria-label="Click to save score" disabled>Save</button>
+                                </form>
+                                <a href="index.html" class="click quiz-button" aria-label="Return home (click to return to homepage)">RESTART</a>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Start of modal -->
                         <!-- <div id="myModal" class="modal"> 
@@ -189,7 +202,7 @@
     </header>
     <section id="leaderboard-panel" class="container-fluid">
         <div class="row">
-            <div class="col-md-4 bg-color-personal-info section-column">
+            <!-- <div class="col-md-4 bg-color-personal-info section-column">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="section-header uppercase">Top 5</h3>
@@ -231,8 +244,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8 bg-color-three-reasons section-column">
+            </div> -->
+            <div class="col-md-12 bg-color-three-reasons section-column">
                 <div class="row">
                     <div class="col">
                         <h3 class="section-heading uppercase text-white">Leaderboard</h3>

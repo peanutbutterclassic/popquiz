@@ -1,13 +1,13 @@
-# InSync 
-## About InSync
-[InSync](https://peanutbutterclassic.github.io/insync/) is an online multidisciplinary educational game, which is designed to help users stay up to date with current affairs as well as matters relating to STEM (Science, Technology, Engineering and Mathematics), Sports, Arts and Literature. 
+# Pop Quiz 
+## About Pop Quiz
+[Pop Quiz](https://peanutbutterclassic.github.io/popquiz/) is an online multidisciplinary educational game, which is designed to help users stay up to date with current affairs as well as matters relating to STEM (Science, Technology, Engineering and Mathematics), Sports, Arts and Literature. 
 The game comprises of four disciplines which are listed as follows:
 1. Current affairs;
 2. Sports;
 3. STEM (Science, Technology, Engineering and Mathematics);
 4. Arts, Humanity & Literature. 
 
-The [InSync](https://peanutbutterclassic.github.io/insync/) website is easy to navigate since it is intuitive and provides ease of use for people with disabilities.
+The [Pop Quiz](https://peanutbutterclassic.github.io/popquiz/) website is easy to navigate since it is intuitive and provides ease of use for people with disabilities.
 
 ![Responsive Mockup](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/ami_respon_main.png)
 

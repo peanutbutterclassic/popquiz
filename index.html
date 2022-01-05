@@ -121,8 +121,22 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
+                                                    <!-- Enter name and get score section -->
+                                                    <section id="playerInfoPanel" class="container-fluid d-none">
+                                                        <div class="row">
+                                                            <h1 id="playerInfoFormFinalScore" class="text-center">0</h1>
+                                                            <form id="playerInfoForm" class="end-form-container">
+                                                                <p id="end-text">Enter your name below to save your score
+                                                                </p>
+                                                                <input type="text" class="click" id="playername" placeholder="Enter your name" required>
+                                                                <button type="submit" class="click quiz-button" aria-label="Click to save score">Ok</button>
+                                                            </form>
+                                                        </div>
+                                                    </section>
+                                                    <section id="leaderboard-panel" class="container-fluid">
+                                                        <div class="row">
                                                     <!-- End Game -->
-                                                    <section id="panelId" class="container-fluid">
+                                                    <section id="panelId" class="container-fluid d-none">
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div id="highScores" class="col-md-12 section-column">
@@ -188,6 +202,8 @@
                         </div>
                     </div>
     </header>
+
+    <!-- Enter name and get score section -->
     <section id="playerInfoPanel" class="container-fluid">
         <div class="row">
             <h1 id="playerInfoFormFinalScore" class="text-center">0</h1>

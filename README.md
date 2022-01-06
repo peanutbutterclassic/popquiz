@@ -62,16 +62,14 @@ This quiz game is easy to operate, thanks to the simple design.
 
 ![Leaderboard](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/screenshot_leaderboard.png)
 
-- __No Score Scenario__
-![No Score](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_noscore.png)
 
 ### Existing Features (previous version submitted)
 
-![LET'S PLAY](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/main_page.png)
+![InSync](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/main_page.png) was the last version submitted, which had useful features and structure but was rendered on different pages. The current version [Top Quiz](https://peanutbutterclassic.github.io/popquiz/) made an attempt to try and integrate the codes in one html page and use modal to view the quiz content. 
 
 - __The Pop Quiz Landing Page__
 
-  - The START QUIZ button in the top section of the of the page is placed there on purpose to help user navigate to start quiz. Viewer start from left to right, so it is placed next to the logo for ease of access.
+  - The START QUIZ button in the top section of the page is placed there on purpose to help user navigate to start quiz. It has been assumed that viewer would start looking at the screen from left to right (on desktop) and similar on mobile devices but scrolling down quicker, so it is placed next to the logo for ease of access.
 
 - __Leaderboard Button__
 
@@ -111,7 +109,7 @@ This quiz game is easy to operate, thanks to the simple design.
 
 - Since we are always looking to improve, any coder with a passion to promote education for all are encouraged to contribute to the following features:
   - Create a more interactive quiz that covers different areas of interest; 
-  - Add more interactive sounds and technologies to the website;
+  - Add more interactive sounds and technologies to the website (this feature was successfully implemented in the [InSync](https://peanutbutterclassic.github.io/insync/) a glitch occurred in this version, which has meant the feature did not work at all;
   - Another feature worth including in the future is the implementation of a time system with a different game types such as racing against time;
   - A score tracking system;
   - A timer (for speed reading of contents and answering questions);
@@ -119,7 +117,7 @@ This quiz game is easy to operate, thanks to the simple design.
   - Images to support the correct/incorrect answers;
   - Users can create a username; and,
   - Feedback form.
-- Other technologies to include:
+- Other technologies to include are listed as follows:
   - JavaScript Libraries:
         - [JQuery](https://jquery.com/)
         - [ReactJS](https://reactjs.org/)

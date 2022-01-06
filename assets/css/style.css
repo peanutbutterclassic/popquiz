@@ -148,7 +148,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 200px;
+    min-height: 160px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -242,7 +242,7 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
+/* .cv-pdf i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -255,7 +255,7 @@ footer {
 
 .cv-pdf i:hover {
     color: #e84610;
-}
+} */
 
 .social-links {
     padding-bottom: 15px;
@@ -283,25 +283,29 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    min-height: 360px;
+    padding: 50px;
 }
 
 /* ------------------------------------------Three reasons */
 
-.three-reasons-icon {
+/* .three-reasons-icon {
     font-size: 26px;
     color: #e67e62;
 }
 
 .three-reasons-heading {
     margin-bottom: 15px;
-}
+} */
 
 /* ------------------------------------------Quiz button */
 
 .quiz-button {
-    margin: 25px;
+    margin: 50px;
+    padding: 30px;
 }
+
+
 
 /* ------------------------------------------Quiz features */
 

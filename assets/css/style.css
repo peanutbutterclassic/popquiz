@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700'); */
 
 /* ------------------------------------------Colours */
@@ -146,7 +148,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 240px;
+    min-height: 200px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -228,7 +230,7 @@ header {
 /* ------------------------------------------Leaderboard */
 
 #leaderboard-details {
-    padding: 20px;
+    padding: 5px;
 }
 
 /* ------------------------------------------Footer */
@@ -363,19 +365,19 @@ footer {
 }
 
 /* Heads up Display */
-/* #hud {
+/* hud {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .hud-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hud-main-text {
     text-align: center;
-} */
+} 
 
 #progressBar {
     width: 20rem;
@@ -392,8 +394,5 @@ footer {
     width: 0%;
 }
 
-/* @media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-    }
-} */
+
+

@@ -9,19 +9,62 @@ The game comprises of four disciplines which are listed as follows:
 
 The [Pop Quiz](https://peanutbutterclassic.github.io/popquiz/) website is easy to navigate since it is intuitive and provides ease of use for people with disabilities.
 
-![Responsive Mockup](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/ami_respon_main.png)
+![Responsive Mockup](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/amiresponsive_popquiz.png)
 
 ## Features 
 
-This quiz game is easy to operate, thanks to its simple design. 
+This quiz game is easy to operate, thanks to the simple design. 
 
-### Existing Features
+### New Features 
+
+![START QUIZ]()
+
+
+- __The Pop Quiz Landing Page__
+
+  - The START QUIZ button in the top section of the of the page is placed there on purpose to help user navigate to start quiz. Viewer start from left to right, so it is placed next to the logo for ease of access.
+
+- __All in one page__
+
+  - Contrary to the previous edition (InSync), Pop Quiz aimed to have all the features in one window, not to mention a quiz that opens in modal, which occupies the whole screen on both mobile and large screens.
+
+- __The Question section__
+
+  - Upon clicking on the START QUIZ button, the user will be directed to the quiz page where he/she/they will have to answer ten randomly selected questions from a database of questions covering four different disciplines which are listed as follows:
+  1. Current affairs;
+  2. Sports;
+  3. STEM (Science, Technology, Engineering and Mathematics);
+  4. Arts, Humanity & Literature.
+
+![Quiz Area](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_quiz_area.png)
+
+![Quiz Area](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_quiz_area_2.png)
+
+- __The Score Progress Area__
+
+  - This feature helps the user keep track of the progress during the game. This feature includes indications based on the ten available questions selected at random. 
+  - Each correct answer selected adds 100 points to the score tracker at the top of the quiz page. No point is rewarded for an incorrect answer. 
+  - Once the last question is answered, the game will move to the end page where the user can enter a name to record the score, which can be viewed on the leaderboard. 
+  - If a user is unhappy with the score, he/she/they can press the RESTART button to go back to the home page and click on LET'S START button to restart the quiz.  
+
+- __The Leaderboard Page__
+![InSync Leaderboard](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/score_board.png)
+
+  - This is an area reserved for those who scored the highest points during the quiz. 
+  - The data is gathered from the game session(s) and stored locally to present the top performers. 
+
+- __No Score Scenario__
+![No Score](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_noscore.png)
+
+  - In case of incomplete quiz or no show by user, a "No score saved" notice will appear on the leaderboard.
+
+### Existing Features (previous version submitted)
 
 ![LET'S PLAY](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/main_page.png)
 
-- __The InSync Landing Page__
+- __The Pop Quiz Landing Page__
 
-  - The LET'S PLAY button in the middle of the page is placed there on purpose to help user navigate to start quiz.
+  - The START QUIZ button in the top section of the of the page is placed there on purpose to help user navigate to start quiz. Viewer start from left to right, so it is placed next to the logo for ease of access.
 
 - __Leaderboard Button__
 

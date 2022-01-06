@@ -38,24 +38,24 @@ let questions = [
             { title: "Ukraine", answer: false },
         ]
     },
-    {
-        question: "Shafali Verma hit two half-centuries for India in their Test match against England. Why was that remarkable?",
-        choices: [
-            { title: "She is only 17 years old", answer: true },
-            { title: "She was their No 11", answer: false },
-            { title: "She has also represented India in badminton and table tennis at the Olympics", answer: false },
-            { title: "She is the team's coach but stepped in to play in the Test due to a Covid outbreak in the squad", answer: false },
-        ]
-    },
-    {
-        question: "What was unusual about Karim Benzema’s goals for France in their 2-2 draw with Portugal?",
-        choices: [
-            { title: "They were both penalties – as were the two goals scored by Portugal", answer: false },
-            { title: "They were both scored while the clock read: 46 minutes and 44 seconds", answer: true },
-            { title: "They were his first goals for France even though he has scored more than 250 for Real Madrid", answer: false },
-            { title: "He scored them both with his left foot – including a penalty – even though he is right-footed", answer: false },
-        ]
-    },
+    // {
+    //     question: "Shafali Verma hit two half-centuries for India in their Test match against England. Why was that remarkable?",
+    //     choices: [
+    //         { title: "She is only 17 years old", answer: true },
+    //         { title: "She was their No 11", answer: false },
+    //         { title: "She has also represented India in badminton and table tennis at the Olympics", answer: false },
+    //         { title: "She is the team's coach but stepped in to play in the Test due to a Covid outbreak in the squad", answer: false },
+    //     ]
+    // },
+    // {
+    //     question: "What was unusual about Karim Benzema’s goals for France in their 2-2 draw with Portugal?",
+    //     choices: [
+    //         { title: "They were both penalties – as were the two goals scored by Portugal", answer: false },
+    //         { title: "They were both scored while the clock read: 46 minutes and 44 seconds", answer: true },
+    //         { title: "They were his first goals for France even though he has scored more than 250 for Real Madrid", answer: false },
+    //         { title: "He scored them both with his left foot – including a penalty – even though he is right-footed", answer: false },
+    //     ]
+    // },
     
     // Science questions
     {

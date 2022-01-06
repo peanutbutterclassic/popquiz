@@ -154,7 +154,7 @@
                                                     </section>
 
                                                     <!-- Enter name and get score section -->
-                                                    <section id="playerInfoPanel" class="container-fluid">
+                                                    <section id="playerInfoPanel" class="container-fluid d-none">
                                                         <div class="row">
                                                             <h1 id="playerInfoFormFinalScore" class="text-center">0</h1>
                                                             <form id="playerInfoForm" class="end-form-container">
@@ -189,28 +189,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row g-0 d-none">
-                                <div class="col">
-                                    <ul id="nav" class="list-inline menucontainer">
-                                        <li class="col-6 m-0 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                            <a href="#" class="hvr-sweep-to-bottom"><i
-                                                    class="fas fa-home"></i><span>Home</span></a>
-                                        </li>
-                                        <li class="col-6 m-0 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                            <a href="#" class="hvr-sweep-to-bottom click"><i
-                                                    class="fas fa-question-circle"></i><span>Quiz</span></a>
-                                        </li>
-                                        <li class="col-6 m-0 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                            <a href="#" class="hvr-sweep-to-bottom"><i
-                                                    class="fas fa-trophy"></i><span>Leaderboard</span></a>
-                                        </li>
-                                        <li class="col-6 m-0 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                            <a href="#" class="hvr-sweep-to-bottom"><i
-                                                    class="fas fa-copyright"></i><span>Credits</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -251,7 +229,7 @@
                 <p id="end-text">Enter your name below to save your score
                 </p>
                 <input type="text" class="click" id="playername" placeholder="Enter your name" required>
-                <button type="submit" class="click quiz-button" aria-label="Click to save score">Ok</button>
+                <button type="submit" id="myModal" class="click quiz-button" aria-label="Click to save score">Ok</button>
             </form>
         </div>
     </section>
@@ -357,6 +335,7 @@
 
     <!-- JS Script link -->
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

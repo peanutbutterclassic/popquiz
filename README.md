@@ -177,13 +177,10 @@ The issue was addressed and understood in this edition, but another issue came u
 Websites such as ![CodingBuddy](https://coddingbuddy.com/article/56077801/the-button-close-of-my-modal-is-not-working) for example have mentioned similar issues related to bootstrap 4 and bootstrap 5 not closing or opening properly or not working at all. Such issue would require an overriding method to fix the problem.
 
 
-
-
-
 ## Deployment
 
 - The site is deployed on GitHub pages. The steps to deploy are as follows: 
-  - The live link is available here - [InSync](https://peanutbutterclassic.github.io/insync/)
+  - The live link is available here - [Top Quiz](https://peanutbutterclassic.github.io/popquiz/)
 
 ## Credits 
 
@@ -192,7 +189,7 @@ A special mention to [Code Institute](https://codeinstitute.net/)'s tutoring tea
 ### Content 
 
 - A YouTube tutorial given by [Traversy Media](https://www.youtube.com/watch?v=6ophW7Ask_0) has helped me understand how to use modal box which I had combined with [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)'s tutorial to create my quiz page that pops up on the same page as the main page without having to use another page.
-- Instructions on how to create a quiz using HTML, CSS and JavaScript [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=3763s)
+- Instructions on how to create a quiz using HTML, CSS and JavaScript [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=3763s) and [WebDevSimplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=180s)
 
 ### Media
 
@@ -225,3 +222,5 @@ I want to thank Code Institute's tutorial team for their patience and support th
 15. [Pexels, Garrett johnson](https://www.pexels.com/photo/blue-arcade-joystick-3800795/)
 16. Online Python Tutor: Embeddable Web-Based Program Visualization for CS Education. ACM Technical Symposium on Computer Science Education (SIGCSE), 2013. [ACM DL]
 17. [Quizzit](https://quizizz.com/join)
+18. [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=180s)
+19. [Stackoverflow](https://stackoverflow.com/questions/18432394/how-to-make-twitter-bootstrap-modal-full-screen)

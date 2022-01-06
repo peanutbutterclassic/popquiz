@@ -36,9 +36,8 @@ This quiz game is easy to operate, thanks to the simple design.
   3. STEM (Science, Technology, Engineering and Mathematics);
   4. Arts, Humanity & Literature.
 
-![Quiz Area](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_quiz_area.png)
+![Quiz Area](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/screenshot_quizpage.png)
 
-![Quiz Area](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_quiz_area_2.png)
 
 - __The Score Progress Area__
 
@@ -47,16 +46,24 @@ This quiz game is easy to operate, thanks to the simple design.
   - Once the last question is answered, the game will move to the end page where the user can enter a name to record the score, which can be viewed on the leaderboard. 
   - If a user is unhappy with the score, he/she/they can press the RESTART button to go back to the home page and click on LET'S START button to restart the quiz.  
 
-- __The Leaderboard Page__
-![InSync Leaderboard](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/score_board.png)
+- __Right answer indication__
+  - This feature helps the user understand whether he/she/they answered the question correctly by either showing green for correct answer or red for incorrect answer.
+
+![Right answer and progress bar](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/screenshot_rightanswer.png)
+
+- __Wrong answer indication__
+
+![Pop Quiz Incorrect Answer](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/screenshot_wronganswer.png)
+
+- __The Leaderboard Section__
 
   - This is an area reserved for those who scored the highest points during the quiz. 
   - The data is gathered from the game session(s) and stored locally to present the top performers. 
 
+![Leaderboard](https://raw.githubusercontent.com/peanutbutterclassic/popquiz/main/assets/documentation/screenshot_leaderboard.png)
+
 - __No Score Scenario__
 ![No Score](https://raw.githubusercontent.com/peanutbutterclassic/insync/master/assets/documentation/screen_noscore.png)
-
-  - In case of incomplete quiz or no show by user, a "No score saved" notice will appear on the leaderboard.
 
 ### Existing Features (previous version submitted)
 
@@ -165,7 +172,15 @@ In the end, this particular issue was resolved by adding class="click" to every 
 
 The aim was to create a functioning quiz website. Major bugfixes have been performed and reported in the TESTING section. Considering the limited time left before the deadline, addressing and fixing the validation of CSS and Javascript errors or warnings shall be put on pending since the website is already working as expected. However, additional efforts will be allocated to improve and address issues such as favicon errors that keep popping up and error 404 when saving score in github io but the error does not persist in gitpod, which will require attention upon completion. 
 
-In short, the quiz function well on [InSync gitpod](https://8000-white-turkey-g9merwy5.ws-eu16.gitpod.io/leaderboard.html) but an issue with 404 appear when user saves score in [InSync github deployment page](https://peanutbutterclassic.github.io/insync/end.html), which directs to error 404.
+The previous edition [InSync gitpod](https://8000-white-turkey-g9merwy5.ws-eu16.gitpod.io/leaderboard.html) had an issue with 404 appear when user saves score in [InSync github deployment page](https://peanutbutterclassic.github.io/insync/end.html), which directs to error 404.
+
+The issue was addressed and understood in this edition, but another issue came up, which could be due to the fact that bootstrap 5 is still at its infancy and new issues such as the one discribed below shall be further investigated by the coding community. Such issue shall be addressed in due course.
+
+Websites such as ![CodingBuddy](https://coddingbuddy.com/article/56077801/the-button-close-of-my-modal-is-not-working) for example have mentioned similar issues related to bootstrap 4 and bootstrap 5 not closing or opening properly or not working at all. Such issue would require an overriding method to fix the problem.
+
+
+
+
 
 ## Deployment
 
